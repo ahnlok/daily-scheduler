@@ -20,9 +20,17 @@ textarea{
   border-radius: 0;
   border-bottom: 10px solid black;
 }
+#currentDay {
+  font-weight: bold;
+  color: blue;
+}
 
 .description{
   white-space: pre-wrap;
+}
+p {
+  text-align: center;
+  font-weight: bold;
 }
 
 .time-block{
