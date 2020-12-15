@@ -1,10 +1,13 @@
-$(document).ready(function(){
-    var arrayOfHours = ["09", "10", "11", "12", "13", "14", "15", "16", "17"]
-
-    //moment.js variable
+$(document).ready(function() {   //moment.js variable
     var timeDate = moment().format('MMMM Do YYYY, h:mm:ss a');
-    
     $("#currentDay").append(timeDate);
+    
+    //Declared variable
+    var arrayOfHours = ["09", "10", "11", "12", "13", "14", "15", "16", "17"];
+
+    function timeDetector() {
+        var currentZone = 
+    }
 });
 // Current day is displayed at the top of the calendar
 
