@@ -4,9 +4,18 @@ $(document).ready(function() {   //moment.js variable
     
     //Declared variable
     var arrayOfHours = ["09", "10", "11", "12", "13", "14", "15", "16", "17"];
+    timeDetector();
 
     function timeDetector() {
-        var currentZone = 
+        //current time variable declared
+        var currentZone = moment().format('H');
+        //for loop 
+        for(var i = 0; i < arrayOfHours.length; i++) {
+            if(parseInt(arrayOfHours[i]) < currentZone) {
+                $("#" + arrayOfHours[i]).attr("style", "background-color: gray");
+            }
+            
+        }
     }
 });
 // Current day is displayed at the top of the calendar
