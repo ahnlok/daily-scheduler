@@ -28,8 +28,13 @@ textarea{
 .description{
   white-space: pre-wrap;
 }
+
 p {
   text-align: center;
+  font-weight: bold;
+}
+
+input {
   font-weight: bold;
 }
 
