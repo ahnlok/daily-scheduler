@@ -19,7 +19,7 @@
 ---
  ![header](./images/header.jpg)
 
- 2. ##### Using moment.js I was able to set current date, year, and time (colorded in blue).
+ 2. ##### Using moment.js I was able to set current date, year, and time (colored in blue).
 
 ---
  ![timeblock](./images/type.jpg)
