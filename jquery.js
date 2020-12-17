@@ -5,20 +5,28 @@ $(document).ready(function() {
     
     //Declared variable
     var arrayOfHours = ["9", "10", "11", "12", "13", "14", "15", "16", "17"];
-    var currentTime = moment();
-
+    
+    //Function to detect past, present , future 
     function timeDetector() {
-        console.log("function is working");
+        // console.log("function is working");
         //current time variable declare
         var currentZone = moment().format('HH'); 
-         console.log(currentZone)
+        //  console.log(currentZone)
+        //for loop
         for(var i = 0; i < arrayOfHours.length; i++) {
+            // console.log("for loop");
             if(parseInt(arrayOfHours[i]) < currentZone) {
-                $("#row" + arrayOfHours[i]).addClass("past");
+                $("#" + arrayOfHours[i]).addClass("past");
+            } 
+            else if (parseInt(arrayOfHours[i]) > currentZone) {
+                $("#" + arrayOfHours[i]).addClass("future");
             }
+            else if (parseInt(arrayOfHours[i]) == currentZone) {
+                $("#" + arrayOfHours[i]).addClass("present");
+            }
+            
         }
-    timeDetector();
-    }
+    } timeDetector();
     //localStorage to store saved placeholder 
     function saveMemo () {
        $(".row").each(function () {
@@ -37,7 +45,7 @@ $(document).ready(function() {
         var memoSave = $(this).siblings("input").val();
 
         localStorage.setItem(timeSave, memoSave);
-        // console.log(arrayOfHours, memo);
+        // console.log(timeSave, memoSave);
     });
     
 });
