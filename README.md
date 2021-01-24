@@ -36,7 +36,7 @@
 ## Credit:
 Sungpil An <ansungpil1@gmail.com>
 ##### URL:
-- GitPage:<https://ahnlok.github.io/schedule-hw05/>
+- GitPage:<https://ahnlok.github.io/daily-scheduler/>
 - GitHubRepository:<https://github.com/ahnlok/schedule-hw05>
 ---
 ## License: 
